@@ -1,3 +1,70 @@
+# Performance Analysis: Autoencoder vs FFT
+
+![Metrics](https://github.com/user-attachments/assets/76a3d3d4-737d-4096-9a31-28a5e954e31c)
+
+
+## Overview
+This analysis compares the performance of Autoencoder and FFT methods across different window sizes (300k to 50M) and reduction rates (100x, 300x, 1000x) using four key metrics.
+
+## Error Metrics Analysis
+
+### Mean Squared Error (MSE)
+- **Autoencoder**:
+ - Shows higher error rates compared to FFT
+ - Error decreases with larger window sizes
+ - Higher reduction rates (1000x) result in larger errors
+ - 100x reduction maintains lowest error across all window sizes
+
+- **FFT**:
+ - Consistently lower error rates than Autoencoder
+ - More stable performance across window sizes
+ - Maintains better error rates even at high reduction rates
+ - Shows clear advantage in accuracy over Autoencoder
+
+### Mean Absolute Error (MAE)
+- Similar patterns to MSE
+- FFT maintains significantly lower MAE across all configurations
+- Autoencoder shows improvement with larger windows but still higher error rates
+- Error increases with higher reduction rates for both methods
+
+## Statistical Measures
+
+### Pearson Correlation
+- **Autoencoder**:
+ - Strong correlation (>0.95) for 100x reduction
+ - Performance degrades significantly with higher reduction rates
+ - Correlation decreases with larger window sizes
+ - 1000x reduction shows poorest performance (~0.6-0.7)
+
+- **FFT**:
+ - Excellent correlation (>0.95) across all configurations
+ - Very stable performance regardless of window size
+ - Minimal impact from different reduction rates
+ - Maintains high correlation even at 1000x reduction
+
+### R-squared Score
+- **Autoencoder**:
+ - Shows similar patterns to Pearson correlation
+ - Best performance with 100x reduction (~0.95-0.98)
+ - Significant degradation at higher reduction rates
+ - Largest windows show poorest performance
+
+- **FFT**:
+ - Consistently high R-squared values (>0.95)
+ - Minimal variation across window sizes
+ - Maintains performance even at high reduction rates
+ - Shows superior stability compared to Autoencoder
+
+## Key Findings
+1. FFT consistently outperforms Autoencoder across all metrics
+2. Autoencoder performance is more sensitive to both window size and reduction rate
+3. Higher reduction rates (1000x) significantly impact Autoencoder performance while FFT remains stable
+4. FFT maintains high statistical correlation even with aggressive data reduction
+5. Larger window sizes tend to negatively impact Autoencoder performance more than FFT
+
+## Conclusion
+FFT demonstrates superior and more stable performance across all tested configurations, making it the more reliable choice for data reduction tasks. While Autoencoder can achieve good results with lower reduction rates and smaller windows, its performance degrades more significantly with larger windows and higher reduction rates.
+
 # Execution Time Analysis: Autoencoder vs FFT
 
 ![Execution time comparison between Autoencoder and FFT](https://github.com/user-attachments/assets/1c783bd4-5998-49f1-ba42-aefb59885c04)
