@@ -1,7 +1,6 @@
 # Performance Analysis: Autoencoder vs FFT
 
-![Metrics](https://github.com/user-attachments/assets/76a3d3d4-737d-4096-9a31-28a5e954e31c)
-
+![Metrics](https://github.com/user-attachments/assets/573a7eb5-a7ce-4661-866c-b1fc5e7d1f86)
 
 ## Overview
 This analysis compares the performance of Autoencoder and FFT methods across different window sizes (300k to 50M) and reduction rates (100x, 300x, 1000x) using four key metrics.
