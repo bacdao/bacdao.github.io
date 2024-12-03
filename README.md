@@ -100,3 +100,6 @@ FFT demonstrates superior and more stable performance across all tested configur
 ## 100X Reduction Ratio
 ![Chrom_100x](https://github.com/user-attachments/assets/7fdf9ca1-24c6-4089-8595-b0ed01246226)
 
+## 300X Reduction Ratio
+![Chrom_300x](https://github.com/user-attachments/assets/7f05b271-e286-49e6-92c6-7aec6dc7c0e6)
+
