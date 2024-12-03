@@ -96,9 +96,6 @@ FFT demonstrates superior and more stable performance across all tested configur
 - Autoencoder shows slightly more erratic scaling, particularly at larger window sizes
 - Both methods show significant time increases from 10M to 50M window sizes
 
-### Key Takeaway
-FFT demonstrates more consistent performance across different reduction rates, making it potentially more suitable for time-critical applications. The Autoencoder's execution time is more sensitive to both window size and reduction rate, with lower reduction rates requiring notably more processing time due to the need to preserve more detailed information in the compressed representation.
-
 # Chromosome scale
 ## 100X Reduction Ratio
 ![Chrom_100x](https://github.com/user-attachments/assets/7fdf9ca1-24c6-4089-8595-b0ed01246226)
